@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    background-image: linear-gradient(to right top, #fcf7ff, #ebe2f1, #dacde2, #c9b8d4, #b8a4c6);
+}
+
+body{
+    height: 100%;
+    font-family: 'Heebo', sans-serif;
+    color: #4C4452;
+}
+
+
+#mainwrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#internalwrapper {
+    width: 70%;
+    min-height: 60vh;
+    padding: 10px;
+    box-shadow:
+        0 4.5px 3.6px rgba(0, 0, 0, 0.024),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 30.1px 24.1px rgba(0, 0, 0, 0.046),
+        0 100px 80px rgba(0, 0, 0, 0.07);
+    
+    background-color: rgba(233, 233, 233, 0.349);
+    border-radius: 7px;
+    text-align:center;
+}
+
+
+
+.start{
+    margin-top: 50px;
+}
+
+
+
+.question-head, .end{
+    margin-top: 10vh;
+    margin-bottom: 60px;
+}
+
+.end{
+    font-size: 40px;
+}
+
+.result{
+    font-size: 25px;
+}
+
+
+.choices{
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.buttons{
+    margin: 20px auto;
+    display: none;
+}
+
+
+input[type="button"]{
+    min-width: 90px;
+    min-height: 40px;
+    padding: 5px 18px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input:disabled{
+    cursor: auto;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.timer{
+    font-size: 25px;
+    color: red
+}
+
+
+.start input{
+    margin-top: 30px;
+}
